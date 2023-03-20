@@ -12,7 +12,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ${{ matrix.language == 'javascript' && 'ubuntu-latest' || 'windows-latest' }}
+    runs-on: ${{ matrix.language == 'javascript' && 'ubuntu-latest' || 'windows-2019' }}
     permissions:
       actions: read
       contents: read
