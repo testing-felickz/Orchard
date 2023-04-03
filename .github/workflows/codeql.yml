@@ -66,8 +66,8 @@ jobs:
     - name: build proj
       if: ${{ matrix.language == 'csharp' }}
       run: |
-         nuget restore ./src/Orchard.proj
-         msbuild ./src/Orchard.proj
+         nuget restore Orchard.proj
+         msbuild Orchard.proj
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
